@@ -11,7 +11,7 @@ class ComposeToIntellij < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/J-R-Oliver/compose-to-intellij/releases/download/v1.0.0/compose-to-intellij_1.0.0_macOS_arm64.tar.gz"
-      sha256 "0b9dd1a0f4e019da93080896a669b73107812602cba11792c1d5ab8dcc4ad78b"
+      sha256 "8082cee703970324a049e3526883563592df473d086a8e890080db19c1c1a98a"
 
       def install
         bin.install "compose-to-intellij"
@@ -19,7 +19,7 @@ class ComposeToIntellij < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/J-R-Oliver/compose-to-intellij/releases/download/v1.0.0/compose-to-intellij_1.0.0_macOS_x86_64.tar.gz"
-      sha256 "73a62b14e01640a6ef359e2742f255cd25844a0f665910ef1f6670de03663171"
+      sha256 "3eaa1f8d1d8a2fea5f02e73f647a50f43c5f3a2fab6af41ee79df39276ed2985"
 
       def install
         bin.install "compose-to-intellij"
@@ -28,17 +28,17 @@ class ComposeToIntellij < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/J-R-Oliver/compose-to-intellij/releases/download/v1.0.0/compose-to-intellij_1.0.0_Linux_arm64.tar.gz"
-      sha256 "065104056410d22ef24f0a8c5590df580d007485d4bf9facf7d35c49b4e878da"
+    if Hardware::CPU.intel?
+      url "https://github.com/J-R-Oliver/compose-to-intellij/releases/download/v1.0.0/compose-to-intellij_1.0.0_Linux_x86_64.tar.gz"
+      sha256 "922fb13d65d66325c4bf81dc16158c007b53d7a353fefead3937289c57ba063c"
 
       def install
         bin.install "compose-to-intellij"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/J-R-Oliver/compose-to-intellij/releases/download/v1.0.0/compose-to-intellij_1.0.0_Linux_x86_64.tar.gz"
-      sha256 "afacdd1f441b8c89dbbdfed12db72eec5d33a0c0a046276a9f1b4efec1c74852"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/J-R-Oliver/compose-to-intellij/releases/download/v1.0.0/compose-to-intellij_1.0.0_Linux_arm64.tar.gz"
+      sha256 "592f597d4f7fbd1ca07b8d19bb89a09bc6e10bb2a5b21489fc736e62083b27fb"
 
       def install
         bin.install "compose-to-intellij"
