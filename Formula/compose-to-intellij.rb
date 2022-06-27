@@ -6,12 +6,12 @@ class ComposeToIntellij < Formula
   desc "Command-line application to convert Docker Compose env vars to IntelliJ format"
   homepage "https://github.com/J-R-Oliver/homebrew-tools"
   version "1.0.0"
-  license "UNLICENSE"
+  license "Unlicense"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/J-R-Oliver/compose-to-intellij/releases/download/v1.0.0/compose-to-intellij_1.0.0_macOS_arm64.tar.gz"
-      sha256 "19706e248aa6162726d7e74a2b11c8b98526094b78506ef2c7c4b9f1cc87bd59"
+      sha256 "0b9dd1a0f4e019da93080896a669b73107812602cba11792c1d5ab8dcc4ad78b"
 
       def install
         bin.install "compose-to-intellij"
@@ -19,7 +19,7 @@ class ComposeToIntellij < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/J-R-Oliver/compose-to-intellij/releases/download/v1.0.0/compose-to-intellij_1.0.0_macOS_x86_64.tar.gz"
-      sha256 "84ab5e63be050af21a64836ba253704f3449d046cc05a0cd3893d178b9713e4f"
+      sha256 "73a62b14e01640a6ef359e2742f255cd25844a0f665910ef1f6670de03663171"
 
       def install
         bin.install "compose-to-intellij"
@@ -30,7 +30,7 @@ class ComposeToIntellij < Formula
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/J-R-Oliver/compose-to-intellij/releases/download/v1.0.0/compose-to-intellij_1.0.0_Linux_arm64.tar.gz"
-      sha256 "60a17c825b93ae2ccb6e5d0948062a31a65858e43ad30943d8e0a5a04f9b5925"
+      sha256 "065104056410d22ef24f0a8c5590df580d007485d4bf9facf7d35c49b4e878da"
 
       def install
         bin.install "compose-to-intellij"
@@ -38,7 +38,7 @@ class ComposeToIntellij < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/J-R-Oliver/compose-to-intellij/releases/download/v1.0.0/compose-to-intellij_1.0.0_Linux_x86_64.tar.gz"
-      sha256 "e5a3a624fac96003d91523f4e4bb39e493c492432a121bd8bdaa499bdb383ea0"
+      sha256 "afacdd1f441b8c89dbbdfed12db72eec5d33a0c0a046276a9f1b4efec1c74852"
 
       def install
         bin.install "compose-to-intellij"
