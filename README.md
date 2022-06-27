@@ -1,5 +1,7 @@
 # J-R-Oliver Tools
 
+[![brew test-bot](https://github.com/J-R-Oliver/homebrew-tools/actions/workflows/tests.yml/badge.svg)](https://github.com/J-R-Oliver/homebrew-tools/actions/workflows/tests.yml)
+
 <table>
 <tr>
 <td>
@@ -7,6 +9,10 @@ Homebrew tap to store the formulae for development tools.
 </td>
 </tr>
 </table>
+
+## Formulae
+
+- [compose-to-intellij](https://github.com/J-R-Oliver/compose-to-intellij)
 
 ## How do I install these formulae?
 
