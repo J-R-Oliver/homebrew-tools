@@ -12,7 +12,8 @@ Homebrew tap to store the formulae for development tools.
 
 ## Formulae
 
-- [compose-to-intellij](https://github.com/J-R-Oliver/compose-to-intellij)
+- [compose-to-intellij](https://github.com/J-R-Oliver/compose-to-intellij) - Command line application to convert Docker Compose environment variables to IntelliJ format.
+
 
 ## How do I install these formulae?
 
