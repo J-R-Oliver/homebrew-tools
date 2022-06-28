@@ -5,21 +5,21 @@
 class ComposeToIntellij < Formula
   desc "Command-line application to convert Docker Compose env vars to IntelliJ format"
   homepage "https://github.com/J-R-Oliver/homebrew-tools"
-  version "1.0.0"
+  version "1.1.0"
   license "Unlicense"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/J-R-Oliver/compose-to-intellij/releases/download/v1.0.0/compose-to-intellij_1.0.0_macOS_arm64.tar.gz"
-      sha256 "8082cee703970324a049e3526883563592df473d086a8e890080db19c1c1a98a"
+      url "https://github.com/J-R-Oliver/compose-to-intellij/releases/download/v1.1.0/compose-to-intellij_1.1.0_macOS_arm64.tar.gz"
+      sha256 "a121f86f50718881e4204e89b832483edbb2b72cca38a4e8e0a45ec850049546"
 
       def install
         bin.install "compose-to-intellij"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/J-R-Oliver/compose-to-intellij/releases/download/v1.0.0/compose-to-intellij_1.0.0_macOS_x86_64.tar.gz"
-      sha256 "3eaa1f8d1d8a2fea5f02e73f647a50f43c5f3a2fab6af41ee79df39276ed2985"
+      url "https://github.com/J-R-Oliver/compose-to-intellij/releases/download/v1.1.0/compose-to-intellij_1.1.0_macOS_x86_64.tar.gz"
+      sha256 "fa8fcd501ab3fb68ba79cadeed4a7f56d9f8511f3b968af645ffd69c8af2943c"
 
       def install
         bin.install "compose-to-intellij"
@@ -29,16 +29,16 @@ class ComposeToIntellij < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/J-R-Oliver/compose-to-intellij/releases/download/v1.0.0/compose-to-intellij_1.0.0_Linux_x86_64.tar.gz"
-      sha256 "922fb13d65d66325c4bf81dc16158c007b53d7a353fefead3937289c57ba063c"
+      url "https://github.com/J-R-Oliver/compose-to-intellij/releases/download/v1.1.0/compose-to-intellij_1.1.0_Linux_x86_64.tar.gz"
+      sha256 "8621ca1744f67609be9606052731c81f6e6fda1174d5656da90d6271318f419d"
 
       def install
         bin.install "compose-to-intellij"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/J-R-Oliver/compose-to-intellij/releases/download/v1.0.0/compose-to-intellij_1.0.0_Linux_arm64.tar.gz"
-      sha256 "592f597d4f7fbd1ca07b8d19bb89a09bc6e10bb2a5b21489fc736e62083b27fb"
+      url "https://github.com/J-R-Oliver/compose-to-intellij/releases/download/v1.1.0/compose-to-intellij_1.1.0_Linux_arm64.tar.gz"
+      sha256 "564f092104355fb1736642e014bde222c9539942f5c1bb02dd98137bb3415252"
 
       def install
         bin.install "compose-to-intellij"
